@@ -101,7 +101,19 @@ async function run() {
       res.send(result)
     })
     
+    // get filtered based (science-fiction-movies)
+    app.get('/science-fiction-movies/fiction', async (req, res) => {
+      const query = { genre: {$eq: "Science Fiction"}}
+      const result = await movieCollection.find(query).limit(20).toArray()
+      res.send(result)
+    })
     
+    // get filtered based (thriller-movies)
+    app.get('/thriller-movies/thriller', async (req, res) => {
+      const query = { genre: {$eq: "Thriller"}}
+      const result = await movieCollection.find(query).limit(20).toArray()
+      res.send(result)
+    })
 
 
 
