@@ -87,7 +87,21 @@ async function run() {
       res.send(result)
     })
 
-   
+    // get filtered based (drama-movies)
+    app.get('/drama-movies/drama', async (req, res) => {
+      const query = { genre: {$eq: "Drama"}}
+      const result = await movieCollection.find(query).limit(20).toArray()
+      res.send(result)
+    })
+
+    // get filtered based (horror-movies)
+    app.get('/horror-movies/horror', async (req, res) => {
+      const query = { genre: {$eq: "Horror"}}
+      const result = await movieCollection.find(query).limit(20).toArray()
+      res.send(result)
+    })
+    
+    
 
 
 
