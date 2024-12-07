@@ -80,7 +80,15 @@ async function run() {
       res.send(result)
     })
 
-    
+    // get filtered based (comdedy-movies)
+    app.get('/comedy-movies/comedy', async (req, res) => {
+      const query = { genre: {$eq: "Comedy"}}
+      const result = await movieCollection.find(query).limit(20).toArray()
+      res.send(result)
+    })
+
+   
+
 
 
 
