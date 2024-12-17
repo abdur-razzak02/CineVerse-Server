@@ -2,7 +2,7 @@
 
 CineVerse is an innovative, user-friendly movie streaming website designed to cater to movie enthusiasts around the globe. It offers a vast library of films across diverse genres, eras, and languages, making it the perfect hub for anyone who loves cinema. With an intuitive interface and cutting-edge features, CineVerse provides a seamless viewing experience for users of all ages.
 
-[CineVerse live link](cineverse-9ca24.web.app)
+[CineVerse live link](https://cineverse-9ca24.web.app)
 
 ### Features 
 Frontend features
